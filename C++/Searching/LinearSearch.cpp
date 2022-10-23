@@ -1,21 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int BinarySearch(int arr[],int n,int key){
-    int s=0,e=n;
-    while(s<=e)
+int LinearSearch(int arr[],int n,int key){
+    for (int i = 0; i < n; i++)
     {
-        int mid=(s+e)/2;
-        if (arr[mid] == key)
+        if (arr[i] == key)
         {
-            return mid;
-        }
-        else if(arr[mid] > key){
-            e=mid-1;
-        }
-        else
-        {
-            s=mid+1;
+            return i;
         }
     }
     return -1;
@@ -35,6 +26,6 @@ int main()
     int key;
     cout<<"Enter key: ";
     cin>>key;
-    cout<<BinarySearch(arr,n,key);
+    cout<<LinearSearch(arr,n,key);
     return 0;
 }
