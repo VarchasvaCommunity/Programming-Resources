@@ -1,15 +1,15 @@
-Challenges to practice HTML and CSS {#challenges-to-practice-html-and-css .page-title}
+Challenges to practice HTML and CSS 
 ===================================
 
-::: {.page-body}
 HTML and CSS are pretty much easy to learn but when it comes to creating
 a website, that is when we all face the problem. Below are some of the
 resources, that can help you master your HTML and CSS
 
-[Frontend Practice](https://www.frontendpractice.com/) {#da43d6ee-b87d-4e41-bac0-62b42a92d034}
+[Frontend Practice](https://www.frontendpractice.com/) 
 ======================================================
 
-![](Challenges%20to%20practice%20HTML%20and%20CSS%20bfd737827052473d99e87cb81297556d/Untitled.png)
+![image](https://user-images.githubusercontent.com/60133406/198971708-f6a0f990-381f-4e16-9784-697cfeb09eba.png)
+
 
 Frontend Practice provides you all the inspiration and tools you need to
 start creating amazing websites. Develop your abilities faster by
@@ -19,10 +19,9 @@ colour schemes for each job to save time.
 
 ------------------------------------------------------------------------
 
-[Frontend Mentor](https://www.frontendmentor.io/) {#bc7688bb-5b3e-48cd-a07a-94edff353496}
+[Frontend Mentor](https://www.frontendmentor.io/)
 =================================================
-
-![](Challenges%20to%20practice%20HTML%20and%20CSS%20bfd737827052473d99e87cb81297556d/Untitled%201.png)
+![image](https://user-images.githubusercontent.com/60133406/198971828-2be2736b-fbff-4878-8dff-d09b7626d42e.png)
 
 Everyone can provide feedback to one another in the collaborative
 learning environment known as Frontend Mentor. Please be sure to write a
@@ -31,11 +30,10 @@ opinion. The more specific you can be, the better.
 
 ------------------------------------------------------------------------
 
-[CodePen Challenges](https://codepen.io/challenges) {#00ba5c79-6b1d-40fc-a843-9e84aa78f1c8}
+[CodePen Challenges](https://codepen.io/challenges) 
 ===================================================
 
-![](Challenges%20to%20practice%20HTML%20and%20CSS%20bfd737827052473d99e87cb81297556d/Untitled%202.png)
-
+![image](https://user-images.githubusercontent.com/60133406/198971878-cd0306c8-f360-4385-97ee-d2dc4cd4bc0a.png)
 Building objects for challenges is a fun way to level up your talents.
 You\'ll receive a fresh writing prompt every week with a different take
 on a monthly theme. The top Pens are chosen and highlighted on the
@@ -43,10 +41,10 @@ homepage!
 
 ------------------------------------------------------------------------
 
-[CSSBattle](https://cssbattle.dev/) {#6eb8506e-8f3d-4d77-9d15-b3932cba7ff4}
+[CSSBattle](https://cssbattle.dev/) 
 ===================================
 
-![](Challenges%20to%20practice%20HTML%20and%20CSS%20bfd737827052473d99e87cb81297556d/Untitled%203.png)
+![image](https://user-images.githubusercontent.com/60133406/198971899-083d4776-028e-4f7c-aafa-c38c00adfa25.png)
 
 An online game of CSS Code Golf is called CSSBattle. Players compete to
 be at the top of the leaderboard by visually replicating \"Targets\"
