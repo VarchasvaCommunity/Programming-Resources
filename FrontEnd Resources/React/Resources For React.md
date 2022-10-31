@@ -1,14 +1,14 @@
-Resources For React {#resources-for-react .page-title}
+Resources For React 
 ===================
 
-::: {.page-body}
+
 Following are some of the websites which offer free courses to level up
 your journey in React JS 💪🏻
 
-[**React**](https://reactjs.org/docs/getting-started.html) {#86a46a83-645a-4295-951f-70b708e66010}
+[**React**](https://reactjs.org/docs/getting-started.html)
 ==========================================================
 
-![](Resources%20For%20React%208c4ff68f69ed4becad0afb5c97f305a0/Untitled.png)
+![image](https://user-images.githubusercontent.com/60133406/199023278-2e94d655-14cd-4b99-93cc-4e4e9bbdfaa2.png)
 
 It is a good idea to always learn any programming language or framework
 from the official documentation since it was produced by the expert who
@@ -17,10 +17,10 @@ and almost all errors in their tutorials.
 
 ------------------------------------------------------------------------
 
-[**freeCodeCamp**](https://www.freecodecamp.org/news/search/?query=react) {#49d1b43e-2131-4dc0-8c62-326a4fbe10a8}
+[**freeCodeCamp**](https://www.freecodecamp.org/news/search/?query=react)
 =========================================================================
 
-![](Resources%20For%20React%208c4ff68f69ed4becad0afb5c97f305a0/Untitled%201.png)
+![image](https://user-images.githubusercontent.com/60133406/199023354-3819e351-9c60-42c5-8af5-95d6e4b15c2b.png)
 
 To learn React, there are numerous reliable resources on freeCodeCamp
 and Build an Online Store is one of the best projects that you can see
@@ -31,10 +31,10 @@ scratch in one video.
 
 ------------------------------------------------------------------------
 
-[Devhints](https://devhints.io/react) {#6ad10cfd-927d-40e6-94ae-fb17d77e5894}
+[Devhints](https://devhints.io/react) 
 =====================================
 
-![](Resources%20For%20React%208c4ff68f69ed4becad0afb5c97f305a0/Untitled%202.png)
+![image](https://user-images.githubusercontent.com/60133406/199023411-26464685-cd3a-4e6f-9b77-38b6b2268171.png)
 
 If you quickly want to check some codes without taking the pain of going
 through numerous docs or googling it, Devhints provides the code
@@ -43,12 +43,10 @@ contains cheat-sheets for a variety of other programming languages.
 
 ------------------------------------------------------------------------
 
-[**Udemy**](https://click.linksynergy.com/deeplink?id=JVFxdTr9V80&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourses%2Fsearch%2F%3Fq%3Dreact%26src%3Dsac%26kw%3DReact) {#5e01672e-2ee7-4a81-b15c-f0309cde95a7}
+[**Udemy**](https://click.linksynergy.com/deeplink?id=JVFxdTr9V80&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourses%2Fsearch%2F%3Fq%3Dreact%26src%3Dsac%26kw%3DReact)
 ========================================================================================================================================================================
 
-::: {.source}
-[](https://www.notion.soundefined)
-:::
+![image](https://user-images.githubusercontent.com/60133406/199023515-662f30ae-c66d-4396-a040-9b2bdf39ab1e.png)
 
 One of the best places to study online programming and development
 abilities is on this platform. Numerous free online courses are
@@ -56,4 +54,3 @@ available on Udemy in a variety of fields, including marketing,
 business, technology, and numerous programming languages. One of them is
 react, and there are more than 3,000 courses available in this subject
 alone.
-:::
