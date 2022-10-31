@@ -1,0 +1,121 @@
+Polymorphism
+ 
+The literal meaning of polymorphism is the condition of occurrence in different forms. Polymorphism is a very important concept in programming. It refers to the use of a single type entity (method, operator, or object) to represent different types in different scenarios. Let's take a few examples:
+
+ 
+ Example 1: Polymorphism in addition(+) operator
+ 
+We know that the + operator is used extensively in Python programs. But, it does not have a single usage. For integer data types, the + operator is used to perform an arithmetic addition operation.
+ 
+num1 = 1 
+num2 = 2 
+print(num1+num2)
+ 
+Hence, the above program outputs 3.
+Similarly, for string data types, the + operator is used to perform concatenation
+ 
+str1 = "Python" 
+str2 = "Programming" 
+print(str1+" "+str2)
+
+As a result, the above program outputs "Python Programming".
+Here, we can see that a single operator + has been used to carry out different operations for distinct data types. This is one of the most simple occurrences of polymorphism in Python.
+ 
+Example 2: Functional Polymorphism in Python 
+ 
+There are some functions in Python which are compatible to run with multiple data types.
+One such function is the len() function. It can run with many data types in Python. Let's look at some example use cases of the function
+ 
+print(len("abcdefgeh")) 
+print(len(["a", "b", "c"])) 
+print(len({"a": 1, "b": 2}))
+ 
+output:
+9
+3 
+2
+Here, we can see that many data types such as string, list, tuple, set, and dictionary can work with the len() function. However, we can see that it returns specific information(the length) about the specific data types.
+ 
+Class Polymorphism in Python
+ 
+Polymorphism is a very important concept in Object-Oriented Programming. We can use the concept of polymorphism while creating class methods as Python allows different classes to have methods with the same name. 
+We can then later generalize calling these methods by disregarding the object we are working with. 
+Let's look at an example:
+ 
+Example 3: Polymorphism in Class Methods
+ 
+class Male:
+    
+ def __init__(self, name, age):
+     self.name = name
+     self.age = age
+ def info(self):
+     print("Hi, I am Male")
+        
+class Female:
+    
+ def __init__(self, name, age):
+     self.name = name
+     self.age = age
+ def info(self):
+     print("Hi, I am Female")
+
+
+#Driver's code
+        
+M = Male("Sid", 20)
+F = Female("Zee",21)
+for human in (M, F): #Run loop over the set of objects
+   human.info() #call the info function common to both
+ 
+output:
+ 
+Hi, I am Male 
+Hi, I am Female
+
+Here, we have created two classes Male and Female. They share a similar structure and have the same method info(). However, notice that we have not created a common superclass or linked the classes together in any way. Even then, we can pack these two different objects into a tuple and iterate through them using a common human variable. It is possible due to polymorphism. We can call both the info() methods by just using human.info() call, where human is first M (Instance of Male) and then F (Instance of Female).
+ 
+Polymorphism and Inheritance
+ 
+Like in other programming languages, the child classes in Python also inherit methods and attributes from the parent class. We can redefine certain methods and attributes specifically to fit the child class, which is known as Method Overriding.
+ 
+Polymorphism allows us to access these overridden methods and attributes that have the same name as the parent class. Let's look at an example:
+ 
+
+class Human:
+ def __init__(self, name):
+     self.name = name
+ def info(self):
+     print(“Hi, I am Human”)
+
+
+class Male(Human):
+    
+ def __init__(self, name):
+     super().__init__(name)
+ def info(self):
+     print(“Hi, I am Male”)
+
+
+class Female(Human):
+    
+ def __init__(self, name):
+     super().__init__(name)
+ def info(self):
+     print(“Hi, I am Female”)
+
+
+#Driver's code
+
+M = Male(“Sid”)
+F = Female(“Zee”)
+for human in (M, F): #Run loop over the set of objects
+    human.info() #call the info function common to both
+ 
+output:
+ 
+Hi, I am Male 
+Hi, I am Female
+
+Due to polymorphism, the Python interpreter automatically recognizes that the info() method for object M (Male class) is overridden. So, it uses the one defined in the subclass Male. Same with the object F (Female Class). 
+Note: Method Overloading, a way to create multiple methods with the same name but different arguments, is not possible in Python.
