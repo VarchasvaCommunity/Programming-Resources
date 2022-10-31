@@ -1,15 +1,15 @@
-Resources for Javascript Challenges {#resources-for-javascript-challenges .page-title}
+Resources for Javascript Challenges
 ===================================
 
-::: {.page-body}
+
 Javascript may seem very simple initially, but building websites is
 where we all get into trouble. The materials listed below can assist you
 in making your knowledge in Javascript more concrete.
 
-[**JavaScript 30**](https://javascript30.com/) {#a3bd7ca9-d76d-4bbb-a62d-55beb12b93ae}
+[**JavaScript 30**](https://javascript30.com/) 
 ==============================================
 
-![](Resources%20for%20Javascript%20Challenges%20260c817384974348bb57b98932a796dd/Untitled.png)
+![image](https://user-images.githubusercontent.com/60133406/198983244-80d7d998-cb6c-4e2b-8690-fe88ae592f69.png)
 
 JavaScript30 guides users through the process of creating 30 things in
 30 days without the use of frameworks, compilers, libraries, or
@@ -19,10 +19,10 @@ take this course.
 
 ------------------------------------------------------------------------
 
-[**JS Challenger**](https://www.jschallenger.com/?ref=java5cript.com) {#9ab07d1f-33dc-45c1-8153-9a2bed08e273}
+[**JS Challenger**](https://www.jschallenger.com/?ref=java5cript.com)
 =====================================================================
 
-![](Resources%20for%20Javascript%20Challenges%20260c817384974348bb57b98932a796dd/Untitled%201.png)
+![image](https://user-images.githubusercontent.com/60133406/198983273-4846131a-3310-40ee-a7ba-a6e101becf27.png)
 
 A JavaScript package called Challenger allows you to easily add
 interactive programming challenges to any page. Challenges are extremely
@@ -32,10 +32,10 @@ editor to experiment in.
 
 ------------------------------------------------------------------------
 
-[LeetCode](https://leetcode.com/?ref=java5cript.com) 🙇🏻‍♂️ {#60153a94-249d-4a10-9330-2568bce654c6}
+[LeetCode](https://leetcode.com/?ref=java5cript.com) 🙇🏻‍♂️ 
 ==========================================================
 
-![](Resources%20for%20Javascript%20Challenges%20260c817384974348bb57b98932a796dd/Untitled%202.png)
+![image](https://user-images.githubusercontent.com/60133406/198983328-5308e4f1-8200-4f99-8496-198cae060007.png)
 
 Anyone wishing to practise coding issues or prepare for interviews may
 find it useful. It is one of several sites like that. However, LeetCode
@@ -48,24 +48,7 @@ Apart from the websites listed above, you can also check these websites
 also:
 
 -   [**HackerRank**](https://www.hackerrank.com/)
-
-```{=html}
-<!-- -->
-```
 -   [**Codeforces**](https://codeforces.com/)
-
-```{=html}
-<!-- -->
-```
 -   [**AtCoder**](https://atcoder.jp/)
-
-```{=html}
-<!-- -->
-```
 -   [**Project Euler**](https://projecteuler.net/)
-
-```{=html}
-<!-- -->
-```
 -   [**Codewars**](https://www.codewars.com/)
-:::
