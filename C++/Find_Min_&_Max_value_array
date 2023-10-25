@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int main ()
+{
+    int arr[10], size, i, max_val, min_val; // Array and variable initialization
+    cout << "Please input the size of the array: ";
+    cin >> size; // Input array size
+    cout << "Input the elements of the array: ";
+    for (i = 0; i < size; i++) // Loop to input array elements
+        cin >> arr[i];
+    max_val = arr[0]; // Initialize max_val with first element
+    for (i = 0; i < size; i++) // Loop to find maximum element
+    {
+        if (max_val < arr[i]) // Compare with current element
+            max_val = arr[i]; // Update max_val if needed
+    }
+    min_val = arr[0]; // Initialize min_val with first element
+    for (i = 0; i < size; i++) // Loop to find minimum element
+    {
+        if (min_val > arr[i]) // Compare with current element
+            min_val = arr[i]; // Update min_val if needed
+    }
+    cout << "Largest/Max element in the given array is: " << max_val; // Output maximum element
+    cout << "\nSmallest/Min element in the given array is: " << min_val; // Output minimum element
+    return 0;
+}
