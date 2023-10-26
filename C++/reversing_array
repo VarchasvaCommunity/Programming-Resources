@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Ask user for array size
+    int size;
+    cout << "Enter the size of the array: ";
+    cin >> size;
+
+    // Initialize an array of integers
+    int arr[size];
+
+    // Ask user for array elements
+    cout << "Enter the elements of the array:\n";
+    for(int i = 0; i < size; i++) {
+        cout << "Element " << i+1 << ": ";
+        cin >> arr[i];
+    }
+
+    // Print the initial array
+    cout << "Initial array: ";
+    for(int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    // Reverse the array
+    for(int i = 0; i < size/2; i++) {
+        int temp = arr[i];
+        arr[i] = arr[size - i - 1];
+        arr[size - i - 1] = temp;
+    }
+
+    // Print the reversed array
+    cout << "Reversed array: ";
+    for(int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
