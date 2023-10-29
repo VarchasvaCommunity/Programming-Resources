@@ -1,0 +1,54 @@
+// C++ Program to INSERT an element at a SPECIFIC POSITION in an array 
+#include <iostream> 
+using namespace std; 
+
+// Function to insert element x in array arr at position pos 
+int* insertElement(int n, int arr[], 
+                   int x, int pos) 
+{ 
+    int i; 
+
+    // Increase the size by 1 
+    n++; 
+
+    // Shift elements to make space for the new element 
+    for (i = n; i >= pos; i--) 
+        arr[i] = arr[i - 1]; 
+
+    // Insert x at pos 
+    arr[pos - 1] = x; 
+
+    return arr; 
+} 
+
+// Driver Code 
+int main() 
+{ 
+    int arr[100] = { 0 }; 
+    int i, x, pos, n = 10; 
+
+    // Initialize array with values 1 to 10
+    for (i = 0; i < 10; i++) 
+        arr[i] = i + 1; 
+
+    // Print the original array 
+    for (i = 0; i < n; i++) 
+        cout << arr[i] << " "; 
+    cout << endl; 
+
+    // Element to be inserted 
+    x = 50; 
+
+    // Position at which element is to be inserted 
+    pos = 5; 
+
+    // Insert x at pos 
+    insertElement(n, arr, x, pos); 
+
+    // Print the updated array 
+    for (i = 0; i < n + 1; i++) 
+        cout << arr[i] << " "; 
+    cout << endl; 
+
+    return 0; 
+} 
