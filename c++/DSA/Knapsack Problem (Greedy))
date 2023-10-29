@@ -1,0 +1,87 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+//Structure for an item which stores the weight & corresponding value of Item 
+struct Item {
+    int value, weight;
+
+    // Constructor 
+    Item(int val, int wt)
+        : value(val), weight(wt)
+    {
+    }
+};
+
+// Comparison function to sort Item according to val/weight ratio 
+bool compareItems(struct Item a, struct Item b)
+{
+    double ratio1 = (double)a.value / a.weight;
+    double ratio2 = (double)b.value / b.weight;
+    return ratio1 > ratio2;
+}
+
+// Main function to solve the fractional knapsack problem 
+double fractionalKnapsack(vector<Item>& items, int capacity)
+{
+    // Sort items based on the value-to-weight ratio
+    sort(items.begin(), items.end(), compareItems);
+
+    // Current weight in knapsack 
+    int currentWeight = 0;
+
+    // Result (value in knapsack) 
+    double finalValue = 0.0;
+
+    // Looping through all items 
+    for (int i = 0; i < items.size(); i++) {
+
+        // If adding item won't overflow, add it completely 
+        if (currentWeight + items[i].weight <= capacity) {
+            currentWeight += items[i].weight;
+            finalValue += items[i].value;
+        }
+
+        // If we can't add the current item, add fractional part of it 
+        else {
+            int remaining = capacity - currentWeight;
+            finalValue += items[i].value * ((double)remaining / items[i].weight);
+            break;
+        }
+    }
+
+    // Returning final value 
+    return finalValue;
+}
+
+int main()
+{
+    // Capacity of the knapsack 
+    int capacity;
+    cout << "Enter the capacity of the knapsack: ";
+    cin >> capacity;
+
+    // Number of items 
+    int numItems;
+    cout << "Enter the number of items: ";
+    cin >> numItems;
+
+    // Array to store items 
+    vector<Item> items;
+
+    // Inputting values and weights of items from user 
+    cout << "Enter value and weight of each item:\n";
+    for (int i = 0; i < numItems; i++) {
+        int val, wt;
+        cin >> val >> wt;
+        items.push_back(Item(val, wt));
+    }
+
+    // Function Call 
+    cout << "Maximum profit earned = "
+        << fractionalKnapsack(items, capacity);
+
+    return 0;
+}
