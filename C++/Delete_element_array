@@ -1,0 +1,63 @@
+//C++ program to delete an element from an array
+#include<iostream>
+using namespace std;
+
+// Function to delete element from array
+int deleteElement(int [], int, int);
+
+int main()
+{
+    int arr[100], size, i, element, check;
+    cout<<"Enter the Size: ";
+    cin>>size;
+    if(size > 0)
+    {
+        cout<<"Enter "<<size<<" Array Elements: ";
+        for(i=0; i<size; i++)
+            cin>>arr[i];
+        cout<<"\nEnter Element to Delete: ";
+        cin>>element;
+        check = deleteElement(arr, size, element);
+        if(check == 101)
+            cout<<"\nElement doesn't found in the Array!";
+        else if(check == 102)
+        {
+            cout<<"\nElement Deleted Successfully!";
+            cout<<"\n\nThe New Array is:\n";
+            cout<<"Empty!";
+        }
+        else
+        {
+            cout<<"\nElement Deleted Successfully!";
+            cout<<"\n\nThe New Array is:\n";
+            for(i=0; i<check; i++)
+                cout<<arr[i]<<"  ";
+        }
+    }
+    else
+        cout<<"\nInvalid Input!";
+    cout<<endl;
+    return 0;
+}
+
+// Function to delete element from array
+int deleteElement(int arr[], int size, int element){
+    int i, j, found=0;
+    for(i=0; i<size; i++)
+    {
+        if(arr[i] == element)
+        {
+            for(j=i; j<(size-1); j++)
+                arr[j] = arr[j+1];
+            found++;
+            i--;
+            size--;
+        }
+    }
+    if(found == 0)
+        return 101;
+    else if(size == 0)
+        return 102;
+    else
+        return size;
+}
