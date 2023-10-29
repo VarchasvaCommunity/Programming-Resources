@@ -1,0 +1,92 @@
+// c++ program to find MIN and MAX elements in singly linked list 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
+
+// function that returns the largest element from the linked list. 
+int largestElement(struct Node* head) 
+{ 
+    // declare a max variable and initialize 
+    // it with INT_MIN value. 
+    int max_val = INT_MIN; 
+
+    // check loop while head not equal to NULL 
+    while (head != NULL) { 
+        if (max_val < head->data) 
+            max_val = head->data; 
+        head = head->next; 
+    } 
+    return max_val; 
+} 
+
+// function that returns smallest element from the linked list. 
+int smallestElement(struct Node* head) 
+{ 
+    // declare a min variable and initialize 
+    // it with INT_MAX value. 
+    int min_val = INT_MAX; 
+
+    // check loop while head not equal to NULL 
+    while (head != NULL) { 
+
+        // if min_val is greater than head->data then 
+        // assign value of head->data to min_val 
+        // otherwise node point to next node. 
+        if (min_val > head->data) 
+            min_val = head->data; 
+
+        head = head->next; 
+    } 
+    return min_val; 
+} 
+
+// function that push the element in linked list. 
+void push(struct Node** head, int data) 
+{ 
+    // allocate dynamic memory for newNode. 
+    struct Node* newNode = 
+        (struct Node*)malloc(sizeof(struct Node)); 
+
+    // assign the data into newNode. 
+    newNode->data = data; 
+
+    // newNode->next assign the address of 
+    // head node. 
+    newNode->next = (*head); 
+
+    // newNode become the headNode. 
+    (*head) = newNode; 
+} 
+
+// display linked list. 
+void printList(struct Node* head) 
+{ 
+    while (head != NULL) { 
+        printf("%d -> ", head->data); 
+        head = head->next; 
+    } 
+    cout << "NULL" << endl; 
+} 
+
+// driver program to test the functions 
+int main() 
+{ 
+    // start with empty list 
+    struct Node* head = NULL; 
+    push(&head, 23); 
+    push(&head, 34); 
+    push(&head, 6); 
+    push(&head, 18); 
+    push(&head, 74); 
+    cout << "Linked list is : " << endl; 
+    printList(head); 
+    cout << "Maximum element in linked list: "; 
+    cout << largestElement(head) << endl; 
+    cout << "Minimum element in linked list: "; 
+    cout << smallestElement(head) << endl; 
+    return 0; 
+} 
